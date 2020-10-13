@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 import Navbar from './components/shared/Navbar';
 import Home from './components/shared/Home';
-import Posts from './components/shared/Posts';
+import Profile from './components/shared/Profile';
 import NoMatch from './components/shared/NoMatch';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
@@ -17,7 +17,7 @@ const App = () => (
       <Container>
         <Switch>
           <Route exact path='/' component={Home} />
-          <ProtectedRoute exact path='/posts' component={Posts} />
+          <ProtectedRoute exact path='/profile' component={Profile} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
           <Route component={NoMatch} />

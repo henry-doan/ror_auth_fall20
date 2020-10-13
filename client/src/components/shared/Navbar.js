@@ -11,11 +11,11 @@ class Navbar extends Component {
     if (user) {
       return (
         <Menu.Menu position='right'>
-          <Link to='/posts'>
+          <Link to='/profile'>
             <Menu.Item
-              id='posts'
-              name='posts'
-              active={location.pathname === '/posts'}
+              id='profile'
+              name='profile'
+              active={location.pathname === '/profile'}
             />
           </Link>
           <Menu.Item
